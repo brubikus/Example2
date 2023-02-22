@@ -1,0 +1,48 @@
+olt_ericsson_v8.exe delete ont-7-4-2 debug
+VERSION [8.0.6 2012.12.11] IMS, static-user contains, debug and deleting option
+[deleteont-7-4-2debug]
+[delete][ont-7-4-2debug][olt-7-4]
+GEM VLAN PPPoE= 1966
+GEM VLAN IPTV = 1967
+GEM VLAN SIP  = 1968
+GEM VLAN REZ  = 1969
+GEM VLAN REZ  = 1970
+IP BLM1500: 10.228.10.238
+IP=10.228.10.238, IPTV=3520, PPPoE=3500, IMS=3540, SIP=352
+
+Edit port olt-7-4 oos
+edit port gsx-0-b1 oos
+remove ont ont-7-4-2
+delete ont ont-7-4-2
+delete alias ont-7-4-2
+delete crs gem 1966 olt-7-4 GSX-0-B1
+delete crs gem 1967 olt-7-4 GSX-0-B1
+delete crs gem 1968 olt-7-4 GSX-0-B1
+Edit port olt-7-4 is
+edit port gsx-0-b1 is
+
+olt_ericsson_v8.exe  delete  ONT-2-2-64 debug
+VERSION [8.0.6 2012.12.11] IMS, static-user contains, debug and deleting option
+[deleteont-2-2-64debug]
+[delete][ont-2-2-64debug][olt-2-2]
+GEM VLAN PPPoE= 1636
+GEM VLAN IPTV = 1637
+GEM VLAN SIP  = 1638
+GEM VLAN REZ  = 1639
+GEM VLAN REZ  = 1640
+IP BLM1500: 10.228.3.108
+IP=10.228.3.108, IPTV=3529, PPPoE=3511, IMS=3551, SIP=395
+DELETING ONT ont-2-2-64debug...
+ONT=[ont-2-2-64debug] ALIAS=cli:IISPSyntaxerrora
+Edit port olt-2-2 oos
+edit port gsx-0-b1 oos
+remove ont ont-2-2-64
+delete ont ont-2-2-64
+delete alias ont-2-2-64
+delete crs gem 1636 olt-2-2 GSX-0-B1
+delete crs gem 1637 olt-2-2 GSX-0-B1
+delete crs gem 1638 olt-2-2 GSX-0-B1
+Edit port olt-2-2 is
+edit port gsx-0-b1 is
+DELETE ont-2-2-64debug ALIAS=cli:IISPSyntaxerrora
+OK!
